@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel="stylesheet" href="footer.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <button><span class="material-symbols-outlined">menu</span></button>
+        <h1>EVENTSVIETNAM</h1>
+    </div>
+    <div class="header-right">
+        <button class="material-symbols-outlined">notifications</button>
+        <div class="avatar">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB-S7paBPZQEZ_AaHKue9zOA5EoSc7bMwvurk4MXdyovf3fsbk08aNdfqKUq-I7sFZQgJkblJzrnsVHC10-1osr8rVvuIHvQ77J1ejbn-xmM4dynPIN49IQGC7zO1Yo8EyAwiYX4PQbXhaM5XoItIkyVLvi4_Rd2I5WvJDKtwfm8334sAbYlCagDaoZUnmK312-79WPEY6pi2O58e6kbeMJEXkubHspGPycaoGbdVQNhaDkoo_aH-0XGxq7K5VGMgHRjlkoLG7bUE"/>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<footer class="footer">
+    
+    <div class="footer-grid">
+
+        <!-- LEFT -->
+        <div class="footer-left">
+            <div class="footer-block">
+                <h6>Hotline</h6>
+                <p>Thứ 2 - CN (8:00 - 23:00)</p>
+                <p class="highlight">1900.6408</p>
+            </div>
+
+            <div class="footer-block">
+                <h6>Email</h6>
+                <p>support@ticketbox.vn</p>
+            </div>
+
+            <div class="footer-block">
+                <h6>Văn phòng</h6>
+                <p>Tòa HT1 - Đại học Quốc gia Hà Nội</p>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-right">
+
+            <div class="footer-block">
+                <h6>Khách hàng</h6>
+                <a onclick="openModal('Điều khoản Khách hàng')">Điều khoản sử dụng</a>
+            </div>
+
+            <div class="footer-block">
+                <h6>Ban tổ chức</h6>
+                <a onclick="openModal('Điều khoản Ban Tổ chức')">Điều khoản tổ chức</a>
+            </div>
+
+            <div class="footer-block">
+                <h6>Follow</h6>
+                <div class="social">
+                    <a>f</a>
+                    <a>i</a>
+                    <a>t</a>
+                    <a>in</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2024 TICKETBOX GLOBAL. ALL RIGHTS RESERVED.
+    </p>
+
+</footer>
+
+</main>
+
+<nav class="bottom-nav">
+    <a><span class="material-symbols-outlined">home</span>Home</a>
+    <a><span class="material-symbols-outlined">confirmation_number</span>Tickets</a>
+    <a><span class="material-symbols-outlined">person</span>Profile</a>
+</nav>
+
+<!-- MODAL -->
+<div id="modal-container" class="modal">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h2 id="modal-title">Tiêu đề</h2>
+            <button onclick="closeModal()">✕</button>
+        </div>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<script>
+function openModal(title) {
+    document.getElementById('modal-container').style.display = 'flex';
+    document.getElementById('modal-title').innerText = title;
+}
+
+function closeModal() {
+    document.getElementById('modal-container').style.display = 'none';
+}
+</script>
+
+</body>
+</html>

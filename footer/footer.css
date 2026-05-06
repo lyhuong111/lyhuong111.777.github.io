@@ -1,0 +1,149 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #7c3aed;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 24px;
+    background: #fafafa;
+}
+
+/* 🔥 CHIA 2 CỘT */
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* mỗi bên chiếm 50% */
+.footer-grid .col {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* TEXT TO HƠN */
+.footer h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #7c3aed;
+}
+
+.footer p,
+.footer a {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #7c3aed;
+}
+
+/* SOCIAL */
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social a {
+    width: 36px;
+    height: 36px;
+    background: #ede9fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COPYRIGHT */
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* NAV BOTTOM */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.bottom-nav a {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
