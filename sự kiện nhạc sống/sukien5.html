@@ -2,62 +2,138 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Mr Siro Fan Concert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Siro - Fan Concert - Encore HCM</title>
     <link rel="stylesheet" href="sk1.css">
 </head>
-<body>
+<body >
 
-    <details>
+    <!-- Container chính dùng details/summary để tạo tương tác đóng/mở -->
+    <details >
         
-        <summary>
-            <div>
-                <img src="image.png" alt="Mr Siro Concert">
+        <!-- PHẦN 1: SUMMARY - Card hiển thị ban đầu (Theo Screenshot 2026-05-03 163319.jpg) -->
+        <summary >
+            <div class="event-banner" >
+                <img src="image.png" alt="Banner Mr Siro Fan Concert" >
             </div>
 
-            <div>
-                <h3>Mr Siro - Fan Concert</h3>
-                <p>Giá từ 800.000đ</p>
-                <div>
-                    <span>🗓️</span>
-                    <span>20 tháng 06, 2026</span>
+            <div class="event-content" >
+                <h3 class="event-title" >
+                    Mr Siro - Fan Concert - Encore Ai Cũng Giấu Trong Lòng Tảng Băng - HCM
+                </h3>
+                <p >
+                    Giá từ <span class="event-price" >800.000đ</span>
+                </p>
+                <div >
+                    <span >🗓️</span>
+                    <span class="event-date">20 tháng 06, 2026</span>
                 </div>
-                <div>
-                    <span>📍</span>
+                <div >
+                    <span >📍</span>
                     <div>
-                        <strong>Nhà hát Hòa Bình</strong>
-                        <span>Q10, TPHCM</span>
+                        <strong >Nhà hát Hòa Bình</strong>
+                        <span >240 Đường 3 Tháng 2, Phường 12, Quận 10, TPHCM</span>
                     </div>
+                </div>
+                <div >
+                    ▼ Click để xem Giới thiệu, Lịch diễn & BTC ▼
                 </div>
             </div>
         </summary>
 
-        <div>
-
-            <section>
-                <h4>GIỚI THIỆU</h4>
-                <img src="skns5.1.jpeg">
-                <p>MR SIRO FAN CONCERT ENCORE.</p>
-            </section>
-
-            <section>
-                <h4>LỊCH DIỄN & VÉ</h4>
-                <div>
-                    <p>19:00 - 22:00</p>
-                    <span>Hết vé</span>
+        <!-- PHẦN 2: CHI TIẾT - Hiện ra khi nhấn vào Card -->
+        <div >
+            
+            <!-- A. GIỚI THIỆU SỰ KIỆN (Có chèn 1 ảnh theo yêu cầu và nội dung văn bản) -->
+            <section >
+                <h4 >GIỚI THIỆU SỰ KIỆN</h4>
+                
+                <!-- 1 Ảnh giới thiệu -->
+                <img src="skns5.1.jpeg" alt="Giới thiệu Concert" >
+                
+                <div >
+                    <p >MR SIRO - FAN CONCERT: ENCORE AI CŨNG GIẤU TRONG LÒNG TẢNG BĂNG</p>
+                    <p>Những giai điệu lại sẽ được vang lên thêm một lần nữa vì chính tình yêu của các bạn. Cảm ơn các bạn đã đồng lòng, thay phiên nhau động viên lẫn đốc thúc BTC mấy ngày qua. Hy vọng lần này chúng ta sẽ không bỏ lỡ nhau.</p>
+                    
+                    <p ><b>🎵 NHỮNG LƯU Ý QUAN TRỌNG ĐÊM CONCERT:</b></p>
+                    <ul >
+                        <li>Mua vé an toàn: Chỉ mua vé duy nhất tại Ticketbox.</li>
+                        <li>Chính sách: Vé đã mua KHÔNG thể hoàn trả, đổi ngày hoặc chỉnh sửa.</li>
+                        <li>Độ tuổi: Sự kiện dành cho khán giả từ 14 tuổi trở lên.</li>
+                    </ul>
                 </div>
             </section>
 
-            <section>
-                <h4>BAN TỔ CHỨC</h4>
-                <div>
-                    <img src="skns5.2.jpg">
-                    <p>SIROCON Entertainment</p>
+            <!-- B. LỊCH DIỄN & THÔNG TIN VÉ (Theo Screenshot 2026-05-03 163204.jpg & 163215.jpg) -->
+            <section >
+                <h4 >Lịch diễn & Vé</h4>
+                <div >
+                    <div >
+                        <div>
+                            <p >19:00 - 22:00, T7</p>
+                            <p >20 Tháng 06, 2026</p>
+                        </div>
+                        <span >Hết vé</span>
+                    </div>
+                    
+                    <div >
+                        <p >Các hạng vé (Đã bán hết):</p>
+                        
+                        <div >
+                            <span>> Một Bước Yêu Vạn Dặm Đau</span>
+                            <span >3.000.000 đ</span>
+                        </div>
+                        <div >
+                            <span>> Day Dứt Nỗi Đau</span>
+                            <span >2.800.000 đ</span>
+                        </div>
+                        <div >
+                            <span>> Vô Hình Trong Tim Em</span>
+                            <span >2.000.000 đ</span>
+                        </div>
+                        <div >
+                            <span>> Khóc Cùng Em 3</span>
+                            <span >800.000 đ</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <button disabled>HẾT VÉ</button>
+            <!-- C. BAN TỔ CHỨC (Theo Screenshot 2026-05-03 163319.jpg) -->
+            <section >
+                <h4 >Ban tổ chức</h4>
+                <div >
+                    <img src="skns5.2.jpg" alt="Sirocon Entertainment" >
+                    <div>
+                        <h3 >SIROCON Entertainment</h3>
+                        <p >SIROCON Entertainment</p>
+                        <p >src family</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- D. LƯU Ý QUAN TRỌNG (Chữ dọc bên cạnh) -->
+            <section >
+                <div >
+                    <div >
+                        <h4 >
+                            LƯU Ý
+                        </h4>
+                    </div>
+                    <div >
+                        <p >• Check-in: BTC bắt đầu đón khách từ 15:00 đến 18:50.</p>
+                        <p >• Sau 18:50, BTC xin phép ngừng nhận khách check-in để ổn định chỗ ngồi.</p>
+                        <p >• Không mang đồ ăn hay nước uống từ ngoài vào khán phòng.</p>
+                        <p >• Chương trình không được phép livestream, kính mong khán giả tuân thủ.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nút trạng thái Hết vé -->
+            <button type="button" disabled >
+                HẾT VÉ
+            </button>
         </div>
-
     </details>
 
 </body>
