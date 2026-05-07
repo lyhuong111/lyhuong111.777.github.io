@@ -43,7 +43,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     background: linear-gradient(90deg, #a78bfa, #c4b5fd);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -137,7 +137,7 @@ button:active {
 .hero h1, .about-hero h1 {
     font-size: 42px;
     background: linear-gradient(90deg, #a78bfa, #c4b5fd, #ddd6fe);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 5px 25px rgba(167,139,250,0.3);
 }
@@ -185,56 +185,12 @@ button:active {
 }
 
 /* glow layer */
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg,
-        rgba(255,255,255,0.1),
-        rgba(196,181,253,0.3),
-        rgba(255,255,255,0.1));
-    opacity: 0;
-    transition: 0.4s;
-}
-
-/* shine */
-.card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
-    transition: 0.6s;
-}
 
 /* hover */
 .card:hover {
     transform: scale(1.1) translateY(-6px);
     box-shadow: 0 25px 60px rgba(167,139,250,0.35);
     z-index: 5;
-}
-
-.card:hover::before {
-    opacity: 1;
-}
-
-.card:hover::after {
-    left: 100%;
-}
-
-/* dim xung quanh */
-.grid-4:hover .card,
-.grid-3:hover .card {
-    opacity: 0.35;
-    filter: blur(1px);
-}
-
-.grid-4 .card:hover,
-.grid-3 .card:hover {
-    opacity: 1;
-    filter: blur(0);
 }
 
 /* image */
@@ -319,13 +275,6 @@ button:active {
     padding: 70px 20px;
 }
 
-/* ================= FOOTER ================= */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #888;
-}
-
 /* ================= ANIMATION ================= */
 @keyframes fade {
     from { transform: scale(0.8); opacity: 0; }
@@ -341,4 +290,135 @@ footer {
     .grid-3 {
         grid-template-columns: 1fr;
     }
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 24px;
+    background: #fafafa;
+}
+
+/* 🔥 CHIA 2 CỘT */
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+/* mỗi bên chiếm 50% */
+.footer-grid .col {
+    flex: 1;
+    min-width: 100px;
+}
+
+/* TEXT TO HƠN */
+.footer h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #7c3aed;
+}
+
+.footer p,
+.footer a {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #7c3aed;
+}
+
+/* SOCIAL */
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social a {
+    width: 36px;
+    height: 36px;
+    background: #ede9fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COPYRIGHT */
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+/* thêm dich vu*/
+/* ================= SERVICE ================= */
+.service-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* đảo chiều */
+.service-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ảnh */
+.service-img {
+    flex: 1;
+}
+
+.service-img img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* nội dung */
+.service-content {
+    flex: 1;
+}
+
+.service-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    color: #666;
+    margin-bottom: 15px;
 }
